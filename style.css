@@ -1,0 +1,169 @@
+/* 🌙 Dark Mode Vibes */
+:root {
+  --midnight-blue: #121C2D;
+  --gunmetal-gray: #2C2F33;
+  --charcoal: #1E1E1E;
+  --raisin-black: #232323;
+  --dark-slate-blue: #2A2A6D;
+  --obsidian: #0F0F0F;
+
+  /* 🎨 Accent Colors */
+  --electric-blue: #00FFFF;
+  --lime-green: #32CD32;
+  --hot-pink: #FF69B4;
+  --cyber-yellow: #FFD300;
+  --scarlet-red: #FF2400;
+  --purple-haze: #8E44AD;
+
+  /* ☁️ Light Mode Vibes */
+  --ghost-white: #F8F8FF;
+  --alice-blue: #F0F8FF;
+  --mint-cream: #F5FFFA;
+  --lavender-mist: #E6E6FA;
+  --powder-blue: #B0E0E6;
+
+  /* 🧃 Soft Gradient Background Ideas */
+  --neon-space: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  --blue-galaxy: linear-gradient(135deg, #2E3192, #1BFFFF);
+  --game-night: linear-gradient(135deg, #141E30, #243B55);
+  --retro-pixel: linear-gradient(135deg, #FF0080, #7928CA, #2AFADF);
+
+  /* 🔥 Cool Combos */
+  --dark-purple: #1e0034;
+  --neon-green: #39ff14;
+  --slate-gray: #2f4f4f;
+  --electric-blue-combo: #00bfff;
+  --matte-black: #0a0a0a;
+  --cyber-yellow-combo: #ffd300;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--midnight-blue);
+  color: var(--ghost-white);
+}
+
+/* Header Styles */
+header {
+  background-color: var(--gunmetal-gray);
+  padding: 15px 0;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--electric-blue);
+}
+
+/* Category Section */
+.category {
+  margin: 20px 0;
+}
+
+.category h2 {
+  background-color: var(--dark-slate-blue);
+  color: var(--lime-green);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: var(--charcoal);
+  color: var(--hot-pink);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: var(--electric-blue);
+  color: var(--obsidian);
+}
+
+/* Game Container */
+#game-container {
+  margin: 20px auto;
+  width: 80%;
+  height: 500px;
+  border: 2px solid var(--scarlet-red);
+  background: var(--neon-space);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Hide Games by Default */
+.hidden {
+  display: none;
+}
+
+/* Smooth Fade-In Transition */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Fade-In Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: var(--ghost-white);
+  color: var(--charcoal);
+}
+
+.light-mode header {
+  background-color: var(--alice-blue);
+}
+
+.light-mode .category h2 {
+  background-color: var(--lavender-mist);
+  color: var(--scarlet-red);
+}
+
+.light-mode .button-container button {
+  background-color: var(--mint-cream);
+  color: var(--powder-blue);
+}
+
+.light-mode #game-container {
+  background: var(--blue-galaxy);
+}
+
+/* Bold Combos for Cool Effects */
+.bold-dark-purple-neon-green {
+  background-color: var(--dark-purple);
+  color: var(--neon-green);
+}
+
+.bold-slate-gray-electric-blue {
+  background-color: var(--slate-gray);
+  color: var(--electric-blue-combo);
+}
+
+.bold-matte-black-cyber-yellow {
+  background-color: var(--matte-black);
+  color: var(--cyber-yellow-combo);
+}
